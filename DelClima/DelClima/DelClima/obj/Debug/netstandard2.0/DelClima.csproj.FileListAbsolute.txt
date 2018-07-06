@@ -1,0 +1,9 @@
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\bin\Debug\netstandard2.0\DelClima.deps.json
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\bin\Debug\netstandard2.0\DelClima.dll
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\bin\Debug\netstandard2.0\DelClima.pdb
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\obj\Debug\netstandard2.0\DelClima.csproj.CoreCompileInputs.cache
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\obj\Debug\netstandard2.0\DelClima.AssemblyInfoInputs.cache
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\obj\Debug\netstandard2.0\DelClima.AssemblyInfo.cs
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\obj\Debug\netstandard2.0\DelClima.dll
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\obj\Debug\netstandard2.0\DelClima.pdb
+C:\Users\TInet\source\repos\DelClima\DelClima\DelClima\obj\Debug\netstandard2.0\DelClima.csprojResolveAssemblyReference.cache

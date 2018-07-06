@@ -1,0 +1,4 @@
+DelClima.Droid.MainActivity, DelClima.Android;md57e9979b734bf2cd0ddf6b5cfa8b179a2.MainActivity
+DelClima.Droid.MainActivity, DelClima.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57e9979b734bf2cd0ddf6b5cfa8b179a2.MainActivity
+DelClima.Droid.MainActivity;md57e9979b734bf2cd0ddf6b5cfa8b179a2.MainActivity
+delclima.droid.MainActivity;md57e9979b734bf2cd0ddf6b5cfa8b179a2.MainActivity

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars>
+    <Jar>C:\Users\TInet\source\repos\DelClima\DelClima\DelClima.Android\obj\Debug\lp\4\jl\__reference__pass-v1.2.0.jar</Jar>
+    <Jar>C:\Users\TInet\source\repos\DelClima\DelClima\DelClima.Android\obj\Debug\lp\4\jl\__reference__sdk-v1.0.0.jar</Jar>
+  </Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\TInet\source\repos\DelClima\DelClima\DelClima.Android\obj\Debug\lp\6\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\TInet\source\repos\DelClima\DelClima\DelClima.Android\obj\Debug\lp\5\jl\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\lp\6\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\5\jl\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\TInet\source\repos\DelClima\DelClima\DelClima.Android\obj\Debug\lp\6.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\TInet\source\repos\DelClima\DelClima\DelClima.Android\obj\Debug\lp\5.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>
