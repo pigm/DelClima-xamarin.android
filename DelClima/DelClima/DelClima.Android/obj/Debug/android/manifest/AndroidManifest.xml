@@ -4,13 +4,15 @@
   <uses-sdk android:minSdkVersion="15" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="DelClima" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:icon="@mipmap/icon" android:label="DelClima" android:name="md57e9979b734bf2cd0ddf6b5cfa8b179a2.MainActivity">
+  <application android:icon="@drawable/tiempo" android:label="El Tiempo" android:name="md51df919effdcc416848bb49fe56f5bba7.MainApplication" android:allowBackup="true" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:screenOrientation="portrait" android:theme="@style/ThemePrincipal" android:name="md51df919effdcc416848bb49fe56f5bba7.ClimaActivity" />
+    <activity android:configChanges="orientation|screenSize" android:screenOrientation="portrait" android:theme="@style/MyTheme.Splash" android:name="md51747df22b989278f38d17bc4376155c2.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:configChanges="orientation|screenSize" android:screenOrientation="portrait" android:theme="@style/ThemePrincipal" android:name="md51747df22b989278f38d17bc4376155c2.SplashScreenActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.DelClima.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
