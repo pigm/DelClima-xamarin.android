@@ -15,7 +15,7 @@
     <style name="ThemePrincipal" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowTranslucentStatus">true</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorApp</item>
         <item name="colorAccent">@color/colorApp</item>
     </style>
    

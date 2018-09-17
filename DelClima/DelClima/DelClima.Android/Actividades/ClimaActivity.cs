@@ -8,6 +8,8 @@ using System;
 using System.Net;
 using DelClima.Droid.Properties;
 using Android.Views;
+using Android.Views.InputMethods;
+using Android.Content;
 
 namespace DelClima.Droid
 {
@@ -43,11 +45,21 @@ namespace DelClima.Droid
             button = FindViewById<Button>(Resource.Id.btnVerClima);
             button.Click += async (sender, e) =>
             {
-                string url = Constantes.URL_ENCABEZADO + latitude.Text + Constantes.URL_LONGITUD + longitude.Text + Constantes.URL_USER;
-                JsonValue json = await FetchWeatherAsync(url);
-                ParseAndDisplay(json);
-                closeLoading();
-                llPanelDatosTiempo.Visibility = ViewStates.Visible;
+                ocultarTeclado(latitude);
+                ocultarTeclado(longitude);
+                if (string.IsNullOrEmpty(latitude.Text) || string.IsNullOrEmpty(longitude.Text))
+                {
+                    Toast.MakeText(ApplicationContext, "Error al ingresar los datos", ToastLength.Short).Show();
+                    llPanelDatosTiempo.Visibility = ViewStates.Invisible;
+                }
+                else
+                {
+                    string url = Constantes.URL_ENCABEZADO + latitude.Text + Constantes.URL_LONGITUD + longitude.Text + Constantes.URL_USER;
+                    JsonValue json = await FetchWeatherAsync(url);
+                    ParseAndDisplay(json);
+                    closeLoading();
+                    llPanelDatosTiempo.Visibility = ViewStates.Visible;
+                }
             };
         }
 
@@ -64,6 +76,9 @@ namespace DelClima.Droid
             _progressDialog.SetCancelable(false);
         }
 
+        /// <summary>
+        /// Closes the loading.
+        /// </summary>
         public void closeLoading()
         {
             _progressDialog.Dismiss();
@@ -133,10 +148,23 @@ namespace DelClima.Droid
               conditions.Text = cloudy + " " + cond;     
         }
 
+        /// <summary>
+        /// Ons the destroy.
+        /// </summary>
         protected override void OnDestroy()
         {
             base.OnDestroy();
           
+        }
+
+        /// <summary>
+        /// Ocultars the teclado.
+        /// </summary>
+        /// <param name="editText">Edit text.</param>
+        public void ocultarTeclado(EditText editText)
+        {
+            InputMethodManager inputMethodManager = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            inputMethodManager.HideSoftInputFromWindow(editText.WindowToken, 0);
         }
 
         /// <summary>
